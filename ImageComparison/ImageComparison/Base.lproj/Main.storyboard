@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8gp-Ef-hog">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--图片对比-->
+        <scene sceneID="GDU-7t-OYS">
+            <objects>
+                <viewController id="uXW-CP-oFx" customClass="SimilarlyViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j9t-6r-R23">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="2mB-W7-tN0"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="图片对比" id="2uu-Mi-FMV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AiX-VK-fwK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-312" y="66"/>
+        </scene>
+        <!--Upload-->
+        <scene sceneID="Ig2-0V-uTY">
+            <objects>
+                <viewController title="Upload" id="oDm-vI-vEY" customClass="UploadViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="frF-Ib-EmF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="MBa-41-VYc"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Upload" id="Tfp-qY-0c5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zsB-SY-ePy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-312" y="-598"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="fpc-sG-69R">
+            <objects>
+                <tabBarController id="8gp-Ef-hog" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jER-eX-6vA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="oDm-vI-vEY" kind="relationship" relationship="viewControllers" id="DRI-nk-Asz"/>
+                        <segue destination="uXW-CP-oFx" kind="relationship" relationship="viewControllers" id="bum-oD-S5K"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Nh-af-GaO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1265" y="-266"/>
+        </scene>
+    </scenes>
+</document>
