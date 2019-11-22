@@ -1,6 +1,6 @@
 # OpenCV-iOS
 
-简书链接：
+简书链接：https://www.jianshu.com/p/2584ea958e04
 
 因github限制大小，OpenCV库需自己下载导入；
 
